@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/back"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_st"
+                android:gravity="center"
+                android:padding="30px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700px"
+                    android:background="@drawable/search_body"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="50px">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:fontFamily="@font/caveat_wght"
+                        android:gravity="center"
+                        android:text="Flora"
+                        android:textColor="@color/search"
+                        android:textFontWeight="1000"
+                        android:textSize="80px" />
+
+                    <TextView
+                        android:id="@+id/search_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/gamjaflower_regular"
+                        android:gravity="center"
+                        android:text="꽃 이름을 작성해주세요"
+                        android:textSize="45px" />
+                    <!--<TextView
+                        android:id="@+id/search_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/gamjaflower_regular"
+                        android:gravity="center"
+                        android:text="꽃말을 작성해주세요"
+                        android:textSize="45px"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/search_title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/gamjaflower_regular"
+                        android:gravity="center"
+                        android:text="날짜를 입력해주세요"
+                        android:textSize="45px"
+                        android:visibility="gone"/>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/drop_box"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="50px"
+                            android:entries="@array/spinner" />
+
+<!--                        <EditText
+                            android:id="@+id/search_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="90px"
+                            android:layout_margin="15px"
+                            android:layout_weight="1"
+                            android:background="@drawable/join_detail"
+                            android:hint="한글 또는 영어로 작성해주세요"
+                            android:padding="15px"
+                            android:textSize="35px"
+                            android:visibility="visible" />-->
+
+                        <EditText
+                            android:id="@+id/search_text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="90px"
+                            android:layout_margin="15px"
+                            android:layout_weight="2"
+                            android:background="@drawable/join_detail"
+                            android:hint="한글로 작성해주세요"
+                            android:padding="15px"
+                            android:textSize="35px"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/search_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/search_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100px"
+                                android:layout_marginRight="5dp"
+                                android:text="1"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/search_month_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100px"
+                                android:layout_marginRight="30px"
+                                android:text="월"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/search_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100px"
+                                android:text="30"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/search_day_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="100px"
+                                android:layout_marginRight="30px"
+                                android:text="일"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/search_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_marginTop="30px"
+                        android:layout_marginRight="4px"
+                        android:background="@drawable/join_detail"
+                        android:fontFamily="@font/gaegu_bold"
+                        android:text="검색"
+                        android:textColor="@color/search"
+                        android:textSize="50px" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShopActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50px"
+                android:padding="10px">
+
+                <EditText
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_margin="15px"
+                    android:layout_weight="1"
+                    android:background="@drawable/join_detail"
+                    android:hint="꽃 이름을 작성해주세요"
+                    android:padding="15px"
+                    android:textSize="35px" />
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_margin="15px"
+                    android:background="@drawable/join_detail"
+                    android:fontFamily="@font/gaegu_bold"
+                    android:text="검색"
+                    android:textColor="@color/search"
+                    android:textSize="50px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="150px"
+                android:background="@drawable/radius_main"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="50px"
+                    android:background="@drawable/radius_list">
+
+                    <ImageView
+                        android:id="@+id/flower_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/flower_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:fontFamily="@font/gamjaflower_regular"
+                            android:gravity="center"
+                            android:text="장미"
+                            android:textSize="60px" />
+
+                        <TextView
+                            android:id="@+id/flower_lang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:fontFamily="@font/gamjaflower_regular"
+                            android:gravity="center"
+                            android:text="당신은 미인입니다."
+                            android:textSize="50px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginBottom="80px"
+                    android:background="@drawable/radius_list"
+                    android:orientation="vertical"
+                    android:padding="50px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60px"
+                        android:text="주문자 정보"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:backgroundTint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:text="전화번호" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:backgroundTint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60px"
+                        android:layout_marginBottom="60px"
+                        android:text="받는 사람 정보"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름" />
+
+                    <EditText
+                        android:id="@+id/from_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:backgroundTint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:text="전화번호" />
+
+                    <EditText
+                        android:id="@+id/from_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:backgroundTint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:text="주소" />
+
+                    <EditText
+                        android:id="@+id/from_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:backgroundTint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100px"
+                        android:text="총 결제 금액"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="10000원" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:text="결제 수단"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:text="무통장 입금"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="80px"
+                        android:background="@drawable/button"
+                        android:text="결제하기"
+                        android:textColor="@color/white"
+                        android:textSize="50px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

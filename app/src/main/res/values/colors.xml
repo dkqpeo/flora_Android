@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="header_color">#CA8A8B</color>
+    //main,detail
+    <color name="main_color">#c18d8c</color>
+    <color name="main_body">#f3e7e4</color>
+    <color name="flower_btn">#BDBDBD</color>
+    <color name="text_color">#5a6c60</color>
+    //리스트
+    <color name="list_color">#f0deda</color>
+    <color name="button_color">#EACEC5</color>
+    //로그인, 회원가입
+    <color name="button">#FFEDE2</color>
+    <color name="btn">#4DBF6E6E</color>
+    //검색
+    <color name="search">#4E4C4C</color>
+    <color name="search_back">#4DC5A8A8</color>
+    <color name="search_st">#D8C5C0</color>
+
+    <color name="back">#f3efee</color>
+
+    <color name="menu">#F1DDC4</color>
+    <color name="my_page">#D6BDB6</color>
+</resources>

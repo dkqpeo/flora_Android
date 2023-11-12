@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyPageActivity">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/back"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginTop="200px"
+                    android:layout_marginBottom="200px"
+                    android:background="@drawable/mypage_radius"
+                    android:padding="50px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/join_detail"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="120px"
+                            android:text="마이페이지"
+                            android:fontFamily="@font/caveat_wght"
+                            android:textSize="50px"
+                            android:textFontWeight="900"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="50px"
+                            android:background="@drawable/join_detail"
+                            android:padding="30px">
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20px"
+                                android:layout_marginRight="20px"
+                                android:text="Android"
+                                android:textSize="50px" />
+
+                            <Button
+                                android:id="@+id/edit_info"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="140px"
+                                android:layout_height="110px"
+                                android:text="수정"
+                                android:fontFamily="@font/caveat_wght"
+                                android:textSize="40px"/>
+                        </LinearLayout>
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="90px"
+                            android:text="주문 조회" />-->
+
+                        <Button
+                            android:id="@+id/order_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="90px"
+                            android:text="주문 조회" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30px">
+
+                            <LinearLayout
+                                android:layout_width="270px"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15px"
+                                android:background="@drawable/join_detail"
+                                android:orientation="vertical"
+                                android:padding="20px">
+
+                                <Button
+                                    style="?android:attr/borderlessButtonStyle"
+                                    android:layout_width="220px"
+                                    android:layout_height="110px"
+                                    android:layout_gravity="center"
+                                    android:text="배송 준비 중" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="20px"
+                                    android:text="-" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="270px"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15px"
+                                android:background="@drawable/join_detail"
+                                android:orientation="vertical"
+                                android:padding="20px">
+
+                                <Button
+                                    style="?android:attr/borderlessButtonStyle"
+                                    android:layout_width="220px"
+                                    android:layout_height="110px"
+                                    android:layout_gravity="center"
+                                    android:text="배송 중" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="20px"
+                                    android:text="-" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="270px"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
+                                android:background="@drawable/join_detail"
+                                android:orientation="vertical"
+                                android:padding="20px">
+
+                                <Button
+                                    style="?android:attr/borderlessButtonStyle"
+                                    android:layout_width="220px"
+                                    android:layout_height="110px"
+                                    android:layout_gravity="center"
+                                    android:text="배송 완료" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="20px"
+                                    android:text="-" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>

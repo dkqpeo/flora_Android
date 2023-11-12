@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_color"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Flora"
+        android:textSize="50px"
+        android:layout_marginLeft="10px"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/header_color"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gamjaflower_regular"
+        android:textSize="50px"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/header_color"/>
+    <View
+        android:background="@color/white"
+        android:layout_width="5px"
+        android:layout_height="50px"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/login_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gamjaflower_regular"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/header_color"/>
+</LinearLayout>
+</LinearLayout>

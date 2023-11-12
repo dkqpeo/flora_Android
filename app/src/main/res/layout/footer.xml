@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_color"
+    android:gravity="bottom|center"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:background="@drawable/menu_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/f_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="80px"
+        android:background="@drawable/list_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/f_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="80px"
+        android:background="@drawable/home_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="80px"
+        android:background="@drawable/shop_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+    <ImageButton
+        android:id="@+id/f_mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="80px"
+        android:background="@drawable/mypage_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+</LinearLayout>
